@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on darwin)" generated="2025-02-27T09:51:44.840705" rpa="false" schemaversion="5">
+<suite id="s1" name="Webtest" source="/Users/macos-ags-app/Documents/Testing/robottest/webtest.robot">
+<test id="s1-t1" name="Open Pinterest and Click Login" line="18">
+<kw name="Open Pinterest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:45.038465" level="INFO">Opening browser 'Chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-27T09:51:45.038128" elapsed="4.738867"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-27T09:51:49.777858" elapsed="0.450144"/>
+</kw>
+<doc>Opens Pinterest in Chrome and maximizes the window.</doc>
+<status status="PASS" start="2025-02-27T09:51:45.037348" elapsed="5.191001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:50.230017" level="INFO">Clicking element '//*[@id="__PWS_ROOT__"]/div/div/div[1]/div/div[1]/div/div[2]/div[2]/button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T09:51:50.228930" elapsed="0.845865"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:51.556412" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-27T09:51:51.075338" elapsed="0.481228"/>
+</kw>
+<doc>Opens Pinterest and clicks the login button.</doc>
+<status status="PASS" start="2025-02-27T09:51:45.036525" elapsed="6.520349"/>
+</test>
+<test id="s1-t2" name="Login to Pinterest" line="24">
+<kw name="Open Pinterest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:51.559507" level="INFO">Opening browser 'Chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-27T09:51:51.559156" elapsed="3.404818"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-27T09:51:54.964673" elapsed="0.408795"/>
+</kw>
+<doc>Opens Pinterest in Chrome and maximizes the window.</doc>
+<status status="PASS" start="2025-02-27T09:51:51.558555" elapsed="3.815267"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:55.374948" level="INFO">Clicking element '//*[@id="__PWS_ROOT__"]/div/div/div[1]/div/div[1]/div/div[2]/div[2]/button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T09:51:55.374249" elapsed="0.159510"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T09:51:55.534276" elapsed="1.471835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:57.006896" level="INFO">Typing text 'wahwah.win.pkg@gmail.com' into text field '//input[@id='email']'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>wahwah.win.pkg@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T09:51:57.006421" elapsed="0.616462"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:57.623937" level="INFO">Typing text 'wahwahwin.pkg' into text field '//input[@id='password']'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>wahwahwin.pkg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T09:51:57.623427" elapsed="0.263178"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:51:57.887602" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T09:51:57.887114" elapsed="0.462472"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HOME_INDICATOR}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T09:51:58.350017" elapsed="6.037695"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-27T09:52:05.447542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-27T09:52:04.387977" elapsed="1.059856"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-27T09:52:05.448398" elapsed="0.269721"/>
+</kw>
+<doc>Logs into Pinterest and verifies successful login by checking home page.</doc>
+<status status="PASS" start="2025-02-27T09:51:51.557417" elapsed="14.161258"/>
+</test>
+<status status="PASS" start="2025-02-27T09:51:44.842359" elapsed="20.877603"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Webtest" id="s1" pass="2" fail="0" skip="0">Webtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
